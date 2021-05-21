@@ -50,13 +50,23 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    
+    func errorLoggingIn(_ error: String) {
+        let alertController = UIAlertController(title: nil, message: error, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Continue", style: .cancel, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+        
+        self.toggleContinueButton(isEnabled: false)
+    }
+    
     @objc func handleSignIn() {
         toggleContinueButton(isEnabled: true)
         if let email = emailTextField.text, let password = passwordTextField.text {
             Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
                 if let e = error {
-                    print (e.localizedDescription)
+                    self.errorLoggingIn(e.localizedDescription)
                 }else{
+                    self.toggleContinueButton(isEnabled: false)
                     self.performSegue(withIdentifier: K.logInSegueIden, sender: self)
                 }
             }

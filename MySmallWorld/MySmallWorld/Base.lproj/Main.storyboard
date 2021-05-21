@@ -16,34 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_6886" translatesAutoresizingMaskIntoConstraints="NO" id="8rL-TL-gXW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgroundGradiant" translatesAutoresizingMaskIntoConstraints="NO" id="8rL-TL-gXW">
                                 <rect key="frame" x="-10" y="0.0" width="430" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8a-ZP-03I" customClass="RoundedButton" customModule="MySmallWorld" customModuleProvider="target">
-                                <rect key="frame" x="41" y="607" width="332" height="74"/>
+                                <rect key="frame" x="38" y="706" width="332" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <state key="normal" title="Log In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Bwj-xt-ROv" kind="presentation" modalPresentationStyle="fullScreen" id="81E-lP-4V0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9M-Mv-ES3" customClass="RoundedButton" customModule="MySmallWorld" customModuleProvider="target">
-                                <rect key="frame" x="41" y="729" width="332" height="74"/>
+                                <rect key="frame" x="40" y="788" width="332" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <state key="normal" title="Register">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="vxA-OD-Ysp" kind="presentation" modalPresentationStyle="fullScreen" id="W5Z-yA-bUj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Small World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEh-bN-50Z">
-                                <rect key="frame" x="76" y="239" width="282" height="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It's My Small World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEh-bN-50Z">
+                                <rect key="frame" x="69" y="126" width="276" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIV-Ce-aPl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784" y="90"/>
+            <point key="canvasLocation" x="782.60869565217399" y="89.732142857142847"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="jX0-8g-LER">
@@ -437,7 +437,7 @@
         <segue reference="8mS-qy-Nts"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="IMG_6886" width="1080" height="1920"/>
+        <image name="BackgroundGradiant" width="2500" height="5000"/>
         <image name="backArrow" width="25" height="25"/>
         <image name="userIcon" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">

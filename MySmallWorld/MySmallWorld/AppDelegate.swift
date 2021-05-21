@@ -8,8 +8,8 @@
 import UIKit
 import Firebase
 
-let primaryColor = UIColor(red: 252/255, green: 74/255, blue: 26/255, alpha: 0.5)
-let secondaryColor = UIColor(red: 247/255, green: 183/255, blue: 51/255, alpha: 1)
+let primaryColor = UIColor(red: 0/255, green: 147/255, blue: 233/255, alpha: 1)
+let secondaryColor = UIColor(red: 128/255, green: 208/255, blue: 199/255, alpha: 1)
 
 
 @main

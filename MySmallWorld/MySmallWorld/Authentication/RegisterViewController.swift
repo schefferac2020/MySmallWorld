@@ -69,12 +69,21 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
+    func errorLoggingIn(_ error: String) {
+        let alertController = UIAlertController(title: nil, message: error, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Continue", style: .cancel, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+        
+        self.toggleContinueButton(isEnabled: false)
+    }
+    
     @objc func handleSignUp() {
         toggleContinueButton(isEnabled: true)
         
         if let email = emailField.text, let password = passwordField.text, let username = usernameField.text {
             Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
                 if let e = error {
+                    self.errorLoggingIn(e.localizedDescription)
                     print(e.localizedDescription)
                     return;
                 }
@@ -90,8 +99,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 }
                 
                 print("Succesffully Signed user up!")
+                self.toggleContinueButton(isEnabled: false)
                 self.performSegue(withIdentifier: K.registerSegueIden, sender: self)
-                
                 
             }
         }
