@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31C94D8C5FFC112B519A0C55 /* Pods_MySmallWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7F3857B84FBB5B01F6C9A3 /* Pods_MySmallWorld.framework */; };
+		C3293BDD266EBAEA00045A8E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3293BDC266EBAEA00045A8E /* MapViewController.swift */; };
 		C35920C72657207400AFD754 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35920C62657207400AFD754 /* LogInViewController.swift */; };
 		C35920CA265724A600AFD754 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35920C9265724A600AFD754 /* RegisterViewController.swift */; };
 		C35920CF2657256700AFD754 /* Konstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35920CE2657256700AFD754 /* Konstants.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		1131E410C7208B7F54689856 /* Pods-MySmallWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySmallWorld.debug.xcconfig"; path = "Target Support Files/Pods-MySmallWorld/Pods-MySmallWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		41A23D2E79686701B0CB2DEA /* Pods-MySmallWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySmallWorld.release.xcconfig"; path = "Target Support Files/Pods-MySmallWorld/Pods-MySmallWorld.release.xcconfig"; sourceTree = "<group>"; };
+		C3293BDC266EBAEA00045A8E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C35920C62657207400AFD754 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		C35920C9265724A600AFD754 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C35920CE2657256700AFD754 /* Konstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Konstants.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C32CD233266EC24D0001E73B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C3293BDC266EBAEA00045A8E /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		C35920CC265724B500AFD754 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 				C394EDF3265719C700151413 /* SceneDelegate.swift */,
 				C35920CC265724B500AFD754 /* Authentication */,
 				C394EDF7265719C700151413 /* Main.storyboard */,
+				C32CD233266EC24D0001E73B /* Map */,
 				C394EDFA265719C800151413 /* Assets.xcassets */,
 				C394EDFC265719C800151413 /* LaunchScreen.storyboard */,
 				C35920D22657297F00AFD754 /* GoogleService-Info.plist */,
@@ -246,6 +257,7 @@
 				C36B429C26571C9D00338CAA /* Gradient.swift in Sources */,
 				C394EDF6265719C700151413 /* MainMenuViewController.swift in Sources */,
 				C35920CA265724A600AFD754 /* RegisterViewController.swift in Sources */,
+				C3293BDD266EBAEA00045A8E /* MapViewController.swift in Sources */,
 				C35920C72657207400AFD754 /* LogInViewController.swift in Sources */,
 				C394EDF2265719C700151413 /* AppDelegate.swift in Sources */,
 				C394EDF4265719C700151413 /* SceneDelegate.swift in Sources */,

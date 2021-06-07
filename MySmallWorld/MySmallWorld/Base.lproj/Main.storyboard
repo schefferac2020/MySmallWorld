@@ -409,13 +409,13 @@
         <!--Map-->
         <scene sceneID="6md-Ea-Jww">
             <objects>
-                <viewController id="amP-ZH-Jyo" sceneMemberID="viewController">
+                <viewController id="amP-ZH-Jyo" customClass="MapViewController" customModule="MySmallWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iFX-Ob-lcI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWp-0y-pfz">
-                                <rect key="frame" x="52" y="174" width="80" height="46"/>
+                                <rect key="frame" x="20" y="44" width="80" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -429,7 +429,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfK-R5-Lkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4325" y="753"/>
+            <point key="canvasLocation" x="4324.6376811594209" y="752.67857142857144"/>
         </scene>
         <!--Deep 10-->
         <scene sceneID="Yd7-n5-1d3">
@@ -479,7 +479,6 @@
         <!--Profile-->
         <scene sceneID="Kqa-pk-gFa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cMt-ee-V9d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="soY-75-19I" customClass="LoggedInViewController" customModule="MySmallWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oaz-MR-J82">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -514,6 +513,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="face.smiling" catalog="system" id="EcM-ST-bZT"/>
                     <navigationItem key="navigationItem" id="72k-ur-a44"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMt-ee-V9d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5255" y="753"/>
         </scene>
