@@ -16,16 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgroundGradiant" translatesAutoresizingMaskIntoConstraints="NO" id="8rL-TL-gXW">
-                                <rect key="frame" x="-10" y="0.0" width="430" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8a-ZP-03I" customClass="RoundedButton" customModule="MySmallWorld" customModuleProvider="target">
                                 <rect key="frame" x="38" y="706" width="332" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <state key="normal" title="Log In">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Bwj-xt-ROv" kind="presentation" modalPresentationStyle="fullScreen" id="81E-lP-4V0"/>
@@ -36,17 +32,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <state key="normal" title="Register">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="vxA-OD-Ysp" kind="presentation" modalPresentationStyle="fullScreen" id="W5Z-yA-bUj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It's My Small World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEh-bN-50Z">
-                                <rect key="frame" x="69" y="126" width="276" height="93"/>
+                                <rect key="frame" x="66" y="469" width="276" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="vecteexy.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8C-mf-x6Q">
@@ -56,6 +52,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="World" translatesAutoresizingMaskIntoConstraints="NO" id="Nci-Iy-xUh">
+                                <rect key="frame" x="50" y="165" width="309" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eye-WH-ddM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -399,7 +399,7 @@
                         <outlet property="emailField" destination="gJ3-AQ-aj2" id="4aa-vQ-q9A"/>
                         <outlet property="passwordField" destination="WQV-FN-Pji" id="OXd-o6-0QW"/>
                         <outlet property="usernameField" destination="KEA-IW-nMQ" id="7NQ-rO-Dne"/>
-                        <segue destination="WX3-b9-kBa" kind="presentation" modalPresentationStyle="overFullScreen" id="WRH-pl-X5b"/>
+                        <segue destination="WX3-b9-kBa" kind="presentation" identifier="registerSegue" modalPresentationStyle="overFullScreen" id="WRH-pl-X5b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFF-LN-8Tj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -544,11 +544,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="W9V-js-WHr"/>
+        <segue reference="WRH-pl-X5b"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="BackgroundGradiant" width="2500" height="5000"/>
         <image name="Food" width="22" height="20"/>
+        <image name="World" width="504" height="495"/>
         <image name="backArrow" width="25" height="25"/>
         <image name="face.smiling" catalog="system" width="128" height="121"/>
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>

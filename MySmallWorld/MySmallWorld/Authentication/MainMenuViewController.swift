@@ -16,8 +16,12 @@ class MainMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        logInButton.defaultColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        registerButton.defaultColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        
+       // logInButton.defaultColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        logInButton.borderColor = CGColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        registerButton.borderColor = CGColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
     }
     

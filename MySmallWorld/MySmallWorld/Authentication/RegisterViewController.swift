@@ -14,6 +14,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    let database = Firestore.firestore()
     var continueButton: RoundedButton!
     
     var activityIndView: UIActivityIndicatorView!
@@ -100,10 +101,30 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 
                 print("Succesffully Signed user up!")
                 self.toggleContinueButton(isEnabled: false)
+                self.add_to_database(username, email)
                 self.performSegue(withIdentifier: K.registerSegueIden, sender: self)
                 
             }
         }
+    }
+    
+    func add_to_database(_ name: String, _ email: String){
+        var ref: DocumentReference? = nil
+        ref = database.collection("users").addDocument(data: [
+            "username": name,
+            "email": email,
+            "born": 1815
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+        
+        let washingtonRef = database.collection("users").document("ZrEHoHvAxTx1iTv3F3Af").updateData(["born" : 3])
+        
+        print("Data sent")
     }
     
     
